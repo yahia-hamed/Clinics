@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('city');
             $table->string('image');
             $table->foreignId('major_id')->references('id')->on('majors');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

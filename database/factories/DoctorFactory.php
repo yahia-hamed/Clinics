@@ -23,7 +23,7 @@ class DoctorFactory extends Factory
             'password' =>fake()->password(),
             'phone' => fake()->phoneNumber(),
             'city' => fake()->city(),
-            'image' => fake()->image(),
+            'image' => fake()->imageUrl(),
             'major_id'=>Major::factory(),
         ];
     }
