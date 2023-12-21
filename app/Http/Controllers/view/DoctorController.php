@@ -26,6 +26,7 @@ class DoctorController extends Controller
     }
     function update(Request $request,string $id){
         $doctors=Doctor::where('id',$id)->update([
+            // 'major_id'=>request()->major_id,
             'name'=>request()->name,
             'email'=>request()->email,
             'password'=>request()->password,

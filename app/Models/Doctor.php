@@ -17,4 +17,11 @@ class Doctor extends Model
     function major(){
        return $this->BelongsTo(Major::class);
     }
+
+    function bookings(){
+        return $this->hasMany(Booking::class);
+     }
+     function rates(){
+        return $this->hasOne(Rate::class);
+     }
 }

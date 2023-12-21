@@ -316,7 +316,17 @@ return [
         [
             'text'        => 'Booking',
             'url'         => '/booking',
-            'icon'        => 'fas fa-user',
+            'icon'        => 'fas fa-ticket-alt',
+        ],
+        [
+            'text'        => 'Rate',
+            'url'         => '/rate',
+            'icon'        => 'fas fa-star',
+        ],
+        [
+            'text'        => 'Contact',
+            'url'         => '/contact',
+            'icon'        => 'fas fa-address-card',
         ],
     ],
 

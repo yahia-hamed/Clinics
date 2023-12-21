@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Rate extends Model
 {
     use HasFactory;
+    function doctor(){
+        return $this->belongsTo(Doctor::class);
+    }
 }
